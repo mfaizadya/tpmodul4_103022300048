@@ -31,5 +31,21 @@ class KodePos
         }
     }
 }
+class Program
+{
+    static void Main()
+    {
+        KodePos kodePos = new KodePos();
+        string[] kelurahanList = { "Batununggal", "Kujangsari", "Mengger", "Wates", "Cijawura", "Jatisari", "Margasari", "Sekejati", "Sekejati", "Kebonwaru", "Maleer", "Samoja"};
+
+        Console.WriteLine("Daftar Kode Pos:");
+        foreach (var kelurahan in kelurahanList)
+        {
+            Console.WriteLine($"{kelurahan}: {kodePos.getKodePos(kelurahan)}");
+        }
+    }
+}
+
+
 
 
